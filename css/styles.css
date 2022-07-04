@@ -1,0 +1,73 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* Fonts */
+/* dm-sans-regular - latin */
+@font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/dm-sans-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/dm-sans-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* dm-sans-500 - latin */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/dm-sans-v11-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/dm-sans-v11-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* dm-sans-700 - latin */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/dm-sans-v11-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/dm-sans-v11-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* rosario-700 - latin */
+@font-face {
+    font-family: 'Rosario';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/rosario-v26-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/rosario-v26-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* Common styles */
+body {
+    width: 100%;
+    background-color: #fff;
+    color: #555555;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: 'DM Sans';
+}
+.wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+}  
