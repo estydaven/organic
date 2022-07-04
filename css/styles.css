@@ -71,3 +71,72 @@ body {
     max-width: 1240px;
     margin: 0 auto;
 }  
+
+/* Header styles */
+.header {
+    padding: 50px 0;
+}
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;    
+}
+.nav__link {
+    color: #222222;
+    transition: all .3s linear;
+}
+.nav__link:hover {
+    color: #09A66D;
+}
+.header__wrapper {
+    display: flex;
+    align-items: center;
+}
+.header-info {
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+}
+.header-info__item {
+    position: relative;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #F3FBF8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.header-info__item:hover {
+    transform: scale(0.9);
+}
+.header-info__item:first-child {
+    margin-right: 20px;
+}
+.header-info__item_basket::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #09A66D;
+    position: absolute;
+    top: 8px;
+    right: 13px;
+}
+.header__button {
+    width: 160px;
+    border: none;
+    background-color: #09A66D;
+    border-radius: 8px;
+    color: #fff;
+    padding: 12px 23px;
+    cursor: pointer;
+}
