@@ -71,6 +71,44 @@ body {
     max-width: 1240px;
     margin: 0 auto;
 }  
+.wrapper_hero {
+    position: relative;
+    background-image: url(../images/bg-main.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 800px;
+}
+.button {
+    position: relative;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'DM Sans';
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.button:hover {
+    transform: scale(0.95);
+}
+.button::after {
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #09A66D;
+    background-image: url(../images/svg/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+    position: absolute;
+    right: -80px;
+    top: -20px;
+}
 
 /* Header styles */
 .header {
@@ -139,4 +177,76 @@ body {
     color: #fff;
     padding: 12px 23px;
     cursor: pointer;
+}
+
+/* Hero styles */
+.hero {
+    position: relative;
+    background-color: #F3FBF8;
+    padding: 90px 0 30px 0;
+}
+.hero::before {
+    content: '';
+    display: block;
+    width: 612px;
+    height: 408px;
+    background-image: url(../images/leavs1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    left: 200px;
+    top: -50px;
+}
+.hero__inner {
+    text-align: center;
+}
+.hero__title {
+    font-size: 70px;
+    line-height: 90px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #222222;
+}
+.hero__subtitle {
+    max-width: 630px;
+    line-height: 30px;
+    margin: 0 auto 40px;
+}
+.hero-info {
+    width: 250px;
+    margin-left: auto;
+}
+.hero-info__item {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 17px 30px;
+    margin-bottom: 30px;
+}
+.hero-info__item:last-child {
+    margin-bottom: 0;
+}
+.hero-info__text {
+    margin-left: 24px;
+}
+.hero-info__head {
+    display: block;
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+.hero-info__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #F3FBF8;
+}
+.hero-info__text {
+    width: 105px;
+    text-align: center;
 }
