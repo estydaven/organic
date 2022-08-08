@@ -109,6 +109,19 @@ body {
     right: -80px;
     top: -20px;
 }
+.title-main {
+    font-family: 'Rosario';
+    color: #222222;
+    font-size: 70px;
+    line-height: 90px;
+    margin-bottom: 20px;
+}
+.title-main_explore {
+    padding-top: 10px;
+}
+.subtitle-main {
+    margin-bottom: 50px;
+}
 
 /* Header styles */
 .header {
@@ -183,7 +196,7 @@ body {
 .hero {
     position: relative;
     background-color: #F3FBF8;
-    padding: 90px 0 30px 0;
+    padding: 90px 0 50px 0;
 }
 .hero::before {
     content: '';
@@ -249,4 +262,86 @@ body {
 .hero-info__text {
     width: 105px;
     text-align: center;
+}
+
+/* Why section styles */
+.why {
+    padding: 140px 0;
+    background-image: url(../images/why-bg.png);
+    background-repeat: no-repeat;
+    background-position: 96% -7%;
+    background-size: auto;
+}
+.why__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.why__image {
+    width: 550px;
+    height: 550px;
+    object-fit: contain;
+}
+.why-list {
+    max-width: 500px;
+    margin-bottom: 50px;
+}
+.why-list__item {
+    display: flex;
+    align-items: center;
+    padding: 40px 60px;
+    transition: all 0.3s linear;
+}
+.why-list__item:hover {
+    background-color: #F3FBF8;
+}
+.why-list__image {
+    width: 80px;
+    height: 80px;
+    background-color: #F3FBF8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 24px;
+    transition: all 0.3s linear;
+}
+.why-list__item:hover .why-list__image {
+    background-color: #ffffff;
+}
+.why-list__info {
+    max-width: 277px;
+    font-size: 20px;
+    color: #222222;
+    font-weight: 700;
+}
+.why-list__span {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: normal;
+}
+.why__arrow {
+    margin: 0 auto;
+    display: block;
+}
+
+/* Explore section styles */
+.explore {
+    padding: 88px 0 140px 0;
+    background-image: url(../images/leavs1.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 90% 100%;
+    background-color: rgba(9, 166, 109, 0.05);
+}
+.explore__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.explore__image {
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+    margin-right: 50px;
 }
