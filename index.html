@@ -9,15 +9,15 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header class="header">
-        <div class="wrapper">
+    <header class="header" id="home">
+        <div class="wrapper wrapper_header">
             <div class="header__inner">
-                <nav>
+                <nav class="navigate">
                     <ul class="nav">
-                        <li class="nav__item"><a href="" class="nav__link">About Us</a></li>
-                        <li class="nav__item"><a href="" class="nav__link">Service</a></li>
-                        <li class="nav__item"><a href="" class="nav__link">Menu</a></li>
-                        <li class="nav__item"><a href="" class="nav__link">Contacts</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About Us</a></li>
+                        <li class="nav__item"><a href="#service" class="nav__link">Service</a></li>
+                        <li class="nav__item"><a href="#rewievs" class="nav__link">Rewievs</a></li>
+                        <li class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></li>
                     </ul>
                 </nav>
                 <img src="images/svg/logo.svg" alt="" class="header__logo">
@@ -32,6 +32,11 @@
                     </div>
                     <button class="header__button">Register now</button>
                 </div>
+            </div>
+            <div class="burger">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
             </div>
         </div>
     </header>
@@ -73,7 +78,7 @@
             </ul>
         </div>
     </section>
-    <section class="why">
+    <section class="why" id="about">
         <div class="wrapper">
             <div class="why__inner">
                 <div class="why__block">
@@ -105,7 +110,7 @@
             </div>
         </div>
     </section>
-    <section class="explore">
+    <section class="explore" id="service">
         <div class="wrapper">
             <div class="explore__inner">
                 <img src="images/image1.jpg" alt="" class="explore__image">
@@ -117,7 +122,7 @@
             </div>
         </div>
     </section>
-    <section class="review">
+    <section class="review" id="rewievs">
         <div class="wrapper">
             <h2 class="title-main title-main_review">What Our Customers About Us saying</h2>
             <div class="slider">
@@ -182,7 +187,7 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="wrapper">
             <div class="footer__inner">
                 <div class="footer-info">
@@ -217,7 +222,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer__block">
+                <div class="footer__block footer__block_last">
                     <h3 class="footer__title">Contact Us</h3>
                     <a href="mailto:oyasim@email.com" class="contact-link">Email: oyasim@email.com</a>
                     <ul class="socials">
@@ -235,7 +240,9 @@
             </div>
         </div>
     </footer>
-
+    <a href="#home" class="up">
+        <img src="images/svg/up-arrow.svg" class="up__icon" alt="">
+    </a>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="js/slick.min.js"></script>
